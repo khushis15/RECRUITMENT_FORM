@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>First Form</title>
+</head>
+<link rel ="stylesheet" href="style2.css">
+<br>
+<h1>RECRUITMENT FORM</h1>
+<p>Required fields are followed by <span>*</span></p>
+<form id = "form">
+    <div class="part1">
+    <fieldset>
+        <legend>Personal Information</legend><br/>
+        <label for="Fname">Full Name :<span>*</span> </label>
+        <input type="text" id="Fname" name="Name" placeholder="First Name">&nbsp;&nbsp;
+        <input type="text" id="Fname" name="Name" placeholder="Last Name">&nbsp;&nbsp;<br/><br/>
+        <label for="bDate">Birth Date :<span>*</span> </label>
+        <input type="date" id="bDate" name ="B_date" required/>
+        <br/><br/>
+        <label for="Gender">Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="male">Male</label>
+        <input type="radio" name="radio" required>
+        <label for="Female">Female</label>
+        <input type="radio" name="radio" required>
+        <label for="other">Other</label>
+        <input type="radio" name="radio" required>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend>Contact Information</legend><br/>
+        <label for="email">Email :<span>*</span> </label>
+        <input type="email" id="email" name ="email" required/>
+        <br/><br/>
+        <label for="Pnum">Phone Number :<span>*</span> </label>
+        <input type="number" id="Pnum" name ="number"/>
+        <br/><br/>
+        <label for="address" id="add">Address :<span>*</span> </label>
+        <textarea COLS="30" rows="4"></textarea></p>
+    </fieldset>
+        <br><br>
+    <fieldset>
+        <legend>Other Information</legend><br/>
+        <label for="drop">Job Role :<span>*</span> </label>
+        <select id="drop" name="dropdown">
+            <option value="" disabled selected hidden>Choose one</option>
+            <option value="01">Software Developer</option>
+            <option value="02">Data Analyst</option>
+            <option value="03">Web Developer</option>
+            <option value="04">Business Analyst</option>
+        </select><br/><br/> 
+        <label for="browser">Location:</label>
+        <input list="city" name="browser" id="browser" placeholder="Choose your city">
+        <datalist id="city">
+            <option value="Mumbai">
+            <option value="Ahemdabad">
+            <option value="Bangalore">
+            <option value="Pune">
+            <option value="Chandigarh">
+            <option value="Delhi">
+            <option value="Kolkata">
+            <option value="Chennai">
+            <option value="Hyderabad">
+            <option value="Noida">
+            <option value="Gurgaon">
+            <option value="Jaipur">
+            <option value="Surat">
+            <option value="Nagpur">
+            <option value="Mohali">
+        </datalist><br/><br/>
+        <label for="expect">Salary Expectation :</label>
+        <input type="range" id="expect" name ="expectation" min="5lpa" max="12lpa" /></p>
+</fieldset>
+<br/>
+        <input type="submit" id="sub" value="SUBMIT"></br></br>
+        </div>
+    </form>
+</body>
+</html>
